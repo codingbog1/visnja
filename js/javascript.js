@@ -16,7 +16,7 @@ function sendEmail() {
     Host: "smtp.gmail.com",
     Username: "bogdan.denic5@gmail.com",
     Password: "bogdan123",
-    To: 'visnjadenic76@gmail.com',
+    To: 'bogdan.denic5@gmail.com',
     From: document.getElementById("Email").value,
     Subject: "Novi Email za newsletter",
     Body: "Email:" + document.getElementById("Email").value
