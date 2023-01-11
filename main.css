@@ -59,7 +59,7 @@ body {
 .footer-social-links a {
   width: 25px;
   height: 25px;
-  line-height: 20px !important;
+  line-height: 20px ;
   position: relative;
   margin: 0 5px;
   text-align: center;
@@ -267,6 +267,7 @@ body {
 .wrapper {
   height: 40vh;
   position: relative;
+
 }
 
 .fas.fa-envelope {
@@ -363,7 +364,7 @@ input {
 }
 
 .container-left p {
-  color: grey;
+  color: #333333;
 }
 
 .container-left img {
@@ -402,7 +403,7 @@ input {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 5%;
+  margin-top: 50px;
   box-shadow: 1px 1px 2rem rgba(0, 0, 0, .3);
 }
 
@@ -805,3 +806,242 @@ input {
 	position: relative;
 	animation: 1.5s ease-out 0s 1 slideInFromLeft;
 }*/
+.PORUCI{
+  border: none;
+  border-radius: 4px;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.48);
+  overflow: hidden;
+  padding: 20px 50px 20px 70px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  position: relative;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  -webkit-transition: background-position .7s,box-shadow .4s;
+  transition: background-position .7s,box-shadow .4s;
+  background-size: 110%;
+  font-family: 'Oswald', sans-serif;
+}
+.PORUCI:hover{
+  background-position: 0% 30%;
+}
+.PORUCI:hover:after{
+  right: -20px;
+  -webkit-transition: right .4s,-webkit-transform 30s .2s linear;
+  transition: right .4s,-webkit-transform 30s .2s linear;
+  transition: right .4s,transform 30s .2s linear;
+  transition: right .4s,transform 30s .2s linear,-webkit-transform 30s .2s linear;
+}
+.PORUCI:before, .PORUCI:after{
+  font-family: FontAwesome;
+  display: block;
+  position: absolute;
+}
+.PORUCI:before{
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  font-size: 30px;
+  left: 25px;
+  top: 19px;
+}
+.PORUCI:after{
+  -webkit-transition: right .4s, -webkit-transform .2s;
+  transition: right .4s, -webkit-transform .2s;
+  transition: right .4s, transform .2s;
+  transition: right .4s, transform .2s, -webkit-transform .2s;
+  font-size: 100px;
+  opacity: .3;
+  right: -120px;
+  top: -17px;
+}
+
+.PORUCI {
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 10px 0px #E899DC;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#B279A7), to(rgba(222, 135, 61, 0.24))), url("http://www.eatweartravel.com/wp-content/uploads/2015/04/i-love-shopping_1920x1200_83206.jpg");
+  background-image: linear-gradient(to bottom, #E899DC, rgba(222, 135, 61, 0.24)), url("http://www.eatweartravel.com/wp-content/uploads/2015/04/i-love-shopping_1920x1200_83206.jpg");
+}
+.PORUCI:hover {
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 30px 0px #E899DC;
+}
+.PORUCI:hover:after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.PORUCI:hover:before {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.PORUCI:after, .PORUCI:before {
+  content: "";
+}
+.PORUCI b {
+  color: #C81F70;
+  font-weight: 700;
+}
+/*-*/
+.columns{
+  background-color: white;
+  border-radius: 20px;
+  transition: 200ms;
+  box-shadow: 1px 1px 2rem rgba(0, 0, 0, .4);
+}
+.columns:hover{
+  box-shadow: 1px 1px 2rem rgba(0, 0, 0, .4);
+}
+.column1{
+  width: 40%;
+  height: 100%;
+  float: left;
+}
+.column2{
+  width:60%;
+  height: 100%;
+  float: left;
+}
+.products{
+  width: 100%;
+}
+.levo{
+  width:45%;
+  height: 400px;
+  border: 1px solid #C81F70;
+  float: left;
+  border-radius: 20px;
+  margin-top: 5%;
+  margin-left: 3%;
+  box-shadow: 1px 1px 2rem rgba(0, 0, 0, .2);
+}
+.desno{
+  width: 45%;
+  height: 400px;
+  float: left;
+  margin-left: 3%;
+  margin-top: 5%;
+  margin-right: 3%;
+  border-radius: 20px;
+  border: 1px solid #C81F70;
+  box-shadow: 1px 1px 2rem rgba(0, 0, 0, .2);
+}
+.up{
+  width: 100%;
+  height: 170px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-image: url(images/sejk.jpg);
+  background-position: center;
+  background-size: 100%;
+}
+.down{
+  width: 100%;
+  height: 230px;
+}
+@keyframes move{
+  from{
+    padding: 120px;
+    padding-bottom: 5px;
+  }
+  to{
+    padding: 35px;
+    padding-bottom: 5px;
+  }
+}
+.proizvod{
+  width: 80%;
+  height: 300px;
+  background-image:url(images/sejk.jpg);
+  border-radius: 15px;
+  background-position: center;
+  margin-top: 2%;
+  overflow: hidden;
+
+}
+.proizvod .clean9{
+  background-image: url(images/clean9.jpg);
+}
+.proizvod-overlay{
+  width: 100%;
+  border-radius: 15px;
+  height: 100%;
+  background-color: rgba(64, 84, 94,0.5);
+  font-family: 'Abril Fatface', serif;
+  color: white;
+  transition: background-color 0.9s ease;
+  overflow: hidden;
+
+}
+.proizvod-overlay h1{
+  padding: 120px;
+  padding-bottom: 25px;
+}
+.proizvod-overlay p{
+  color: white;
+  width: 60%;
+  font-size: 18px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  position: relative;
+  margin-bottom: 5px;
+}
+.proizvod-overlay:hover p{
+  transition-delay: 0.3s;
+  opacity: 1;
+  
+}
+.proizvod-overlay button{
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+.proizvod-overlay:hover button{
+  transition-delay: 0.3s;
+  opacity: 1;
+}
+.proizvod-overlay button{
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+  border: none;
+  cursor: pointer;
+  transition: 200ms;
+}
+.dropdown{
+  cursor: pointer;
+}
+.proizvod-overlay button:hover{
+  background-color: #C81F70;
+  transition-delay: 0s;
+  color: white;
+}
+.proizvod-overlay h1:after {
+  content: " ";
+  display: block;
+  width: 30%;
+  height: 2px;
+  margin: 20px auto;
+  border: 0;
+  background: #C81F70;
+  transition: all 0.2s;
+}
+.proizvod-overlay:hover {
+  background-color: rgba(64, 64, 70,0.8);
+}
+.proizvod-overlay:hover h1{
+  padding: 35px;
+  padding-bottom: 5px;
+  animation-iteration-count: 1;
+
+  animation: move 0.9s;
+}
+@media screen and (max-width: 990px){
+  .proizvod-overlay h1{
+    padding: 0;
+    padding-top: 110px;
+  }
+  .proizvod-overlay:hover p{
+    display: none;
+  }
+  
+}

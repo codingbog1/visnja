@@ -6,10 +6,17 @@ function myFunction() {
     x.className = "topnav";
   }
 }
-document.querySelector('.submit-email').addEventListener('mousedown', (e) => {
-  e.preventDefault();
-  document.querySelector('.subscription').classList.add('done');
+window.addEventListener("load", function(){
+  setTimeout(
+      function open(event){
+          document.querySelector(".popup").style.display = "block";
+      },
+      1000
+  )
 });
 
-var form = document.getElementById("my-form");
 
+document.querySelector("#close").addEventListener("click", function(){
+  document.querySelector(".popup").style.display = "none";
+  document.querySelector(".thover").style.display = "none";
+});
