@@ -384,7 +384,7 @@ input {
 .slider {
   width: 100%;
   border-radius: 20px;
-  height: 500px;
+  height: 700px;
   background-color: white;
   position: relative;
   overflow: hidden;
@@ -392,6 +392,7 @@ input {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 0px;
   -webkit-flex-flow: row nowrap;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
@@ -449,7 +450,7 @@ input {
   position: absolute;
   top: 0;
   left: 0;
-  width: 400%;
+  width: 300%;
   height: 100%;
   -webkit-transition: left 0.4s;
   transition: left 0.4s;
@@ -1044,4 +1045,7 @@ input {
     display: none;
   }
   
+}
+a {
+  text-decoration: none;
 }
